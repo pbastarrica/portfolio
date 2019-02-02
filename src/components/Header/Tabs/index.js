@@ -5,6 +5,7 @@ const Button = styled.a`
   /* This renders the buttons above... Edit me! */
   display: inline-block;
   border-radius: 3px;
+  text-align: center;
   padding: 0.5rem 0;
   margin: 0.5rem 1rem;
   width: 11rem;
@@ -18,7 +19,10 @@ const Button = styled.a`
 
 const Tabs = () => (
   <div>
-    <Button href="#sectionA">section A</Button>
+    <Button href="#Aboutme">About me</Button>
+    <Button href="#Career">Career</Button>
+    <Button href="#Projects">Projects</Button>
+    <Button href="#Skills">Skills</Button>
   </div>
 );
 export default Tabs;

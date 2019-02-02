@@ -8,8 +8,8 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Picture />
         <Tabs />
+        <Picture />
         <Aboutme />
         <Links />
       </div>
