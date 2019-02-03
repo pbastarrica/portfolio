@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = styled.a`
-  /* This renders the buttons above... Edit me! */
   display: inline-block;
   border-radius: 3px;
   text-align: center;
@@ -12,17 +11,17 @@ const Button = styled.a`
   background: transparent;
   color: black;
   border: 2px solid black;
-
-  /* The GitHub button is a primary button
-   * edit this to target it specifically! */
 `;
-
+const rollToSection = id => {
+  const element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+};
 const Tabs = () => (
   <div>
-    <Button href="#Aboutme">About me</Button>
-    <Button href="#Career">Career</Button>
-    <Button href="#Projects">Projects</Button>
-    <Button href="#Skills">Skills</Button>
+    <Button onClick={() => rollToSection("Projects")}>Projects</Button>
+    <Button onClick={() => rollToSection("Aboutme")}>About me </Button>
+    <Button onClick={() => rollToSection("Career")}>Career</Button>
+    <Button onClick={() => rollToSection("Skills")}>Skills</Button>
   </div>
 );
 export default Tabs;

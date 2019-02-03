@@ -1,15 +1,15 @@
 import React from "react";
 
 const Aboutme = () => (
-  <div>
+  <div id="Aboutme">
     <p>Hello, my name is Pedro Xavier Bastarica Fernández</p>
     <p>
       I'm an Industrial Civil Engineer currently working as an IT Consultant at
       PwC
     </p>
     <p>
-      Here you can check out my <strong>Projects [Link to..]</strong> that I had
-      worked during my career
+      Here, you can check out my <strong>Projects [Link to..]</strong> that I
+      had worked on during my career
     </p>
   </div>
 );

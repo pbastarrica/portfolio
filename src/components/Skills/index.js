@@ -1,7 +1,7 @@
 import React from "react";
 
 const Skills = () => (
-  <div>
+  <div id="Skills">
     <li>Skill 1</li>
     <li>Skill 2</li>
     <li>Skill 3</li>
