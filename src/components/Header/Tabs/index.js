@@ -11,23 +11,25 @@ const Button = styled.a`
   background: transparent;
   color: black;
   border: 2px solid black;
-  curson: pointer;
+  cursor: pointer;
   &:hover {
     background: black;
     border-color: white;
     color: white;
   }
 `;
-const rollToSection = id => {
-  const element = document.getElementById(id);
-  element.scrollIntoView({ behavior: "smooth" });
+const scrollToSection = id => {
+  return () => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
 };
 const Tabs = () => (
   <div>
-    <Button onClick={() => rollToSection("Projects")}>Projects</Button>
-    <Button onClick={() => rollToSection("Aboutme")}>About me </Button>
-    <Button onClick={() => rollToSection("Career")}>Career</Button>
-    <Button onClick={() => rollToSection("Skills")}>Skills</Button>
+    <Button onClick={scrollToSection("Projects")}>Projects</Button>
+    <Button onClick={scrollToSection("Aboutme")}>About me </Button>
+    <Button onClick={scrollToSection("Career")}>Career</Button>
+    <Button onClick={scrollToSection("Skills")}>Skills</Button>
   </div>
 );
 export default Tabs;
