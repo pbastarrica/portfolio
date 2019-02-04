@@ -3,8 +3,8 @@ import React from "react";
 const Links = () => (
   <div>
     <p>
-      <a href="mailto:pedrobastarrica@gmail.com">
-        <img src="./maillogo.png" width="32" height="32" alt="mail" />
+      <a href="mailto:hi@pbastarrica.com">
+        <img src="/img/maillogo.png" width="32" height="32" alt="mail" />
       </a>
     </p>
     <p>
@@ -13,7 +13,12 @@ const Links = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="./linkedinlogo.png" width="32" height="32" alt="Linkedin" />
+        <img
+          src="/img/linkedinlogo.png"
+          width="32"
+          height="32"
+          alt="Linkedin"
+        />
       </a>
     </p>
     <p>
@@ -22,7 +27,7 @@ const Links = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="./resumelogo.png" width="32" height="32" alt="resume" />
+        <img src="/img/resumelogo.png" width="32" height="32" alt="resume" />
       </a>
     </p>
   </div>

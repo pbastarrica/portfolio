@@ -2,7 +2,7 @@ import React from "react";
 
 const Picture = () => (
   <div>
-    <img src="./photo.png" alt="profilepic" />
+    <img src="/img/photo.png" alt="profilepic" />
   </div>
 );
 
