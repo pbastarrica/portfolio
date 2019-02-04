@@ -11,6 +11,12 @@ const Button = styled.a`
   background: transparent;
   color: black;
   border: 2px solid black;
+  curson: pointer;
+  &:hover {
+    background: black;
+    border-color: white;
+    color: white;
+  }
 `;
 const rollToSection = id => {
   const element = document.getElementById(id);
